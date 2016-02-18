@@ -1,2 +1,7 @@
 <h1>Images#new</h1>
 <p>Find me in app/views/images/new.html.erb</p>
+<%= form_for @image do |f| %>
+<%= f.label :title %>
+<%= f.text_area :title %>
+<%= f.submit %>
+<% end %>
