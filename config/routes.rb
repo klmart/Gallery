@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'images/new'
+
+  get 'images/index'
+
 resources :users
 
 
