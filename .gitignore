@@ -18,3 +18,8 @@
 .idea
 Gemfile.lock
 README.rdoc
+.ruby-version
+.ruby-gemset
+/public/system
+# Ignore application configuration
+/config/application.yml
