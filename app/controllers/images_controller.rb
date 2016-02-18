@@ -1,20 +1,21 @@
 class ImagesController < ApplicationController
   def new
-<<<<<<< HEAD
     @image = Image.new
   end
   def create
     @image = Image.new(image_params)
+    if @image.save
+      redirect_to images_url
+    else
+      render 'new'
+    end
   end
 
   def index
   end
-<<<<<<< HEAD
 
   private
   def image_params
-    params.require(:user).permit(:title)
+    params.require(:image).permit(:title)
   end
-=======
->>>>>>> origin/iss1
 end
