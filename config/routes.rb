@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  root 'pictures#index'
 
   devise_for :users
-resources :pictures
-resources :users
+
+  resources :pictures
+  resources :users
 
 
   # The priority is based upon order of creation: first created -> highest priority.

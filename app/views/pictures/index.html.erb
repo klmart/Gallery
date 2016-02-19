@@ -1,5 +1,9 @@
 <h1>Images</h1>
+<div>
 <%= link_to 'Add picture', new_picture_path %>
-<% @pictures.each do |pic| %>
+</div>
+  <% @pictures.each do |pic| %>
     <%= pic.title %>
+    <%= image_tag pic.image.url(:medium) %>
+    <br>
 <% end %>

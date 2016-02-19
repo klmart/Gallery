@@ -1,6 +1,14 @@
 <h1>Images#new</h1>
 <%= form_for @picture do |f| %>
-<%= f.label :title %>
-<%= f.text_area :title %>
-<%= f.submit %>
+    <div>
+      <%= f.label :title %>
+      <%= f.text_area :title %>
+    </div>
+    <div>
+      <%= f.label :image %>
+      <%= f.file_field :image %>
+    </div>
+    <div>
+      <%= f.submit %>
+    </div>
 <% end %>
