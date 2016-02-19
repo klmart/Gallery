@@ -1,0 +1,5 @@
+<h1>Images</h1>
+<%= link_to 'Add picture', new_picture_path %>
+<% @pictures.each do |pic| %>
+    <%= pic.title %>
+<% end %>
