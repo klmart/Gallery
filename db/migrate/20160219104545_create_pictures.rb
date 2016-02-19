@@ -1,6 +1,6 @@
-class CreateImages < ActiveRecord::Migration
+class CreatePictures < ActiveRecord::Migration
   def change
-    create_table :images do |t|
+    create_table :pictures do |t|
       t.string :title
 
       t.timestamps null: false
